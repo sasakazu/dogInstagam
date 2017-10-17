@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		7304C9481F95BFDD00866FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304C9471F95BFDD00866FEF /* AppDelegate.swift */; };
 		7304C94A1F95BFDD00866FEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304C9491F95BFDD00866FEF /* ViewController.swift */; };
-		7304C94D1F95BFDD00866FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304C94B1F95BFDD00866FEF /* Main.storyboard */; };
 		7304C94F1F95BFDD00866FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7304C94E1F95BFDD00866FEF /* Assets.xcassets */; };
 		7304C9521F95BFDD00866FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304C9501F95BFDD00866FEF /* LaunchScreen.storyboard */; };
+		7314B1CF1F95F6CA0049809F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304C94B1F95BFDD00866FEF /* Main.storyboard */; };
+		73D46D561F960F3900EC75FD /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D551F960F3900EC75FD /* dog.jpg */; };
+		73D46D581F96106D00EC75FD /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D571F96106D00EC75FD /* plus.png */; };
+		73D46D5A1F9610DB00EC75FD /* plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D591F9610DB00EC75FD /* plus2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		7304C94E1F95BFDD00866FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7304C9511F95BFDD00866FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7304C9531F95BFDD00866FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D46D551F960F3900EC75FD /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog.jpg; path = ../../../../Desktop/dog.jpg; sourceTree = "<group>"; };
+		73D46D571F96106D00EC75FD /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		73D46D591F9610DB00EC75FD /* plus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,21 @@
 				7304C9491F95BFDD00866FEF /* ViewController.swift */,
 				7304C94B1F95BFDD00866FEF /* Main.storyboard */,
 				7304C94E1F95BFDD00866FEF /* Assets.xcassets */,
+				73D46D551F960F3900EC75FD /* dog.jpg */,
 				7304C9501F95BFDD00866FEF /* LaunchScreen.storyboard */,
 				7304C9531F95BFDD00866FEF /* Info.plist */,
+				73D29CB41F95EC6100A6D97F /* icon */,
 			);
 			path = dogInstagram;
+			sourceTree = "<group>";
+		};
+		73D29CB41F95EC6100A6D97F /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				73D46D591F9610DB00EC75FD /* plus2.png */,
+				73D46D571F96106D00EC75FD /* plus.png */,
+			);
+			path = icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D46D561F960F3900EC75FD /* dog.jpg in Resources */,
+				73D46D581F96106D00EC75FD /* plus.png in Resources */,
+				73D46D5A1F9610DB00EC75FD /* plus2.png in Resources */,
+				7314B1CF1F95F6CA0049809F /* Main.storyboard in Resources */,
 				7304C9521F95BFDD00866FEF /* LaunchScreen.storyboard in Resources */,
 				7304C94F1F95BFDD00866FEF /* Assets.xcassets in Resources */,
-				7304C94D1F95BFDD00866FEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +295,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
 				INFOPLIST_FILE = dogInstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.88company.dogInstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +311,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
 				INFOPLIST_FILE = dogInstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.88company.dogInstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
