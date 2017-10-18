@@ -25,25 +25,28 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     
+
     @IBAction func startCamera(_ sender: Any) {
-    
+        
         let sourceType:UIImagePickerControllerSourceType =
-            UIImagePickerControllerSourceType.camera
-        // カメラが利用可能かチェック
-        if UIImagePickerController.isSourceTypeAvailable(
-            UIImagePickerControllerSourceType.camera){
-            // インスタンスの作成
-            let cameraPicker = UIImagePickerController()
-            cameraPicker.sourceType = sourceType
-            cameraPicker.delegate = self
-            self.present(cameraPicker, animated: true, completion: nil)
-            
-        }
-        else{
-            label.text = "error"
-            
-        }
+                    UIImagePickerControllerSourceType.camera
+                // カメラが利用可能かチェック
+                if UIImagePickerController.isSourceTypeAvailable(
+                    UIImagePickerControllerSourceType.camera){
+                    // インスタンスの作成
+                    let cameraPicker = UIImagePickerController()
+                    cameraPicker.sourceType = sourceType
+                    cameraPicker.delegate = self
+                    self.present(cameraPicker, animated: true, completion: nil)
+        
+                }
+                else{
+                    label.text = "error"
+        
+                }
     }
+    
+    
     
     //　撮影が完了時した時に呼ばれる
     func imagePickerController(_ imagePicker: UIImagePickerController,
