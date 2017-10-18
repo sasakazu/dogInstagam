@@ -18,19 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-sn-q7r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-sn-q7r">
                                 <rect key="frame" x="67" y="219" width="240" height="229"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="TIj-L6-1kW"/>
                                     <constraint firstAttribute="width" constant="240" id="TOJ-sm-ezh"/>
                                     <constraint firstAttribute="height" constant="229" id="ZHm-9y-Uof"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog  Instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-Is-gJt">
                                 <rect key="frame" x="0.0" y="119" width="375" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="J42-mR-7HK"/>
-                                    <constraint firstAttribute="height" constant="67" id="wlg-5D-quw"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,13 +35,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uDc-sn-q7r" firstAttribute="top" secondItem="ohf-Is-gJt" secondAttribute="bottom" constant="33" id="95t-Cl-smD"/>
                             <constraint firstItem="uDc-sn-q7r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="199" id="CPO-9z-O5k"/>
+                            <constraint firstItem="uDc-sn-q7r" firstAttribute="top" secondItem="ohf-Is-gJt" secondAttribute="bottom" constant="33" id="E0J-Iq-p7a"/>
+                            <constraint firstItem="ohf-Is-gJt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="IDK-M0-oRR"/>
+                            <constraint firstItem="ohf-Is-gJt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="N2c-xW-l1j"/>
                             <constraint firstItem="uDc-sn-q7r" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TY7-wL-jcK"/>
                             <constraint firstItem="uDc-sn-q7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="VTF-gZ-NqT"/>
                             <constraint firstItem="uDc-sn-q7r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XTe-FC-CXi"/>
-                            <constraint firstItem="ohf-Is-gJt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YK2-uZ-ezs"/>
-                            <constraint firstItem="ohf-Is-gJt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eoM-kc-ufQ"/>
+                            <constraint firstItem="ohf-Is-gJt" firstAttribute="centerX" secondItem="uDc-sn-q7r" secondAttribute="centerX" id="jIY-Hg-Q8L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uDc-sn-q7r" secondAttribute="trailing" constant="68" id="nar-ok-ziG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dog.jpg" width="211" height="239"/>
+        <image name="dog.jpeg" width="230" height="219"/>
     </resources>
 </document>
