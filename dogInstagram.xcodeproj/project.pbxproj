@@ -12,7 +12,8 @@
 		7304C94F1F95BFDD00866FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7304C94E1F95BFDD00866FEF /* Assets.xcassets */; };
 		7304C9521F95BFDD00866FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304C9501F95BFDD00866FEF /* LaunchScreen.storyboard */; };
 		7314B1CF1F95F6CA0049809F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304C94B1F95BFDD00866FEF /* Main.storyboard */; };
-		731C9F801F9739510035394E /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 731C9F7F1F9739510035394E /* dog.jpeg */; };
+		731C9F821F975B7F0035394E /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 731C9F811F975B7F0035394E /* dog.jpeg */; };
+		731C9FA61F9B59A60035394E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731C9FA51F9B59A60035394E /* CameraViewController.swift */; };
 		73D46D581F96106D00EC75FD /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D571F96106D00EC75FD /* plus.png */; };
 		73D46D5A1F9610DB00EC75FD /* plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D591F9610DB00EC75FD /* plus2.png */; };
 /* End PBXBuildFile section */
@@ -25,7 +26,8 @@
 		7304C94E1F95BFDD00866FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7304C9511F95BFDD00866FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7304C9531F95BFDD00866FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		731C9F7F1F9739510035394E /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog.jpeg; path = ../../../../../Desktop/dog.jpeg; sourceTree = "<group>"; };
+		731C9F811F975B7F0035394E /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
+		731C9FA51F9B59A60035394E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		73D46D571F96106D00EC75FD /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		73D46D591F9610DB00EC75FD /* plus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 				7304C9471F95BFDD00866FEF /* AppDelegate.swift */,
 				7304C9491F95BFDD00866FEF /* ViewController.swift */,
 				7304C94B1F95BFDD00866FEF /* Main.storyboard */,
+				731C9FA51F9B59A60035394E /* CameraViewController.swift */,
 				7304C94E1F95BFDD00866FEF /* Assets.xcassets */,
 				7304C9501F95BFDD00866FEF /* LaunchScreen.storyboard */,
 				7304C9531F95BFDD00866FEF /* Info.plist */,
@@ -75,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				73D46D591F9610DB00EC75FD /* plus2.png */,
-				731C9F7F1F9739510035394E /* dog.jpeg */,
+				731C9F811F975B7F0035394E /* dog.jpeg */,
 				73D46D571F96106D00EC75FD /* plus.png */,
 			);
 			path = icon;
@@ -142,7 +145,7 @@
 			files = (
 				73D46D581F96106D00EC75FD /* plus.png in Resources */,
 				73D46D5A1F9610DB00EC75FD /* plus2.png in Resources */,
-				731C9F801F9739510035394E /* dog.jpeg in Resources */,
+				731C9F821F975B7F0035394E /* dog.jpeg in Resources */,
 				7314B1CF1F95F6CA0049809F /* Main.storyboard in Resources */,
 				7304C9521F95BFDD00866FEF /* LaunchScreen.storyboard in Resources */,
 				7304C94F1F95BFDD00866FEF /* Assets.xcassets in Resources */,
@@ -158,6 +161,7 @@
 			files = (
 				7304C94A1F95BFDD00866FEF /* ViewController.swift in Sources */,
 				7304C9481F95BFDD00866FEF /* AppDelegate.swift in Sources */,
+				731C9FA61F9B59A60035394E /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
