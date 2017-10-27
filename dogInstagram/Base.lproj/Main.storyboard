@@ -18,19 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FO6-ZH-AWy">
-                                <rect key="frame" x="157" y="295" width="131" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-3d-6iC">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Search" id="T2J-gF-fQj"/>
                                 </items>
                             </navigationBar>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFA-48-7DD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -41,8 +39,19 @@
                         <viewLayoutGuide key="safeArea" id="kcI-aW-eeJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="9Dh-P9-gyh"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="0TR-6q-S3A" id="ONi-F4-2eu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhd-16-0xa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="0TR-6q-S3A">
+                    <connections>
+                        <outlet property="delegate" destination="JVr-GA-vxM" id="G8e-cu-S1g"/>
+                        <outlet property="searchContentsController" destination="JVr-GA-vxM" id="EvD-5L-nok"/>
+                        <outlet property="searchResultsDataSource" destination="JVr-GA-vxM" id="LYq-7q-Z0G"/>
+                        <outlet property="searchResultsDelegate" destination="JVr-GA-vxM" id="HQf-5d-jWr"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1486" y="330"/>
         </scene>
@@ -119,7 +128,7 @@
                                 </items>
                             </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-gp-d2M">
-                                <rect key="frame" x="0.0" y="64" width="96" height="94"/>
+                                <rect key="frame" x="16" y="83" width="96" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u0f-SE-grv">
@@ -128,13 +137,6 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mIe-VQ-afI">
-                                    <rect key="frame" x="0.0" y="0.0" width="96" height="94"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <cells/>
                             </collectionView>
                         </subviews>
