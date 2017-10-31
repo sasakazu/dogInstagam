@@ -13,6 +13,7 @@
 		7304C94F1F95BFDD00866FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7304C94E1F95BFDD00866FEF /* Assets.xcassets */; };
 		7304C9521F95BFDD00866FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304C9501F95BFDD00866FEF /* LaunchScreen.storyboard */; };
 		7314B1CF1F95F6CA0049809F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304C94B1F95BFDD00866FEF /* Main.storyboard */; };
+		7314C6501FA875B600D82CF1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7314C64F1FA8758C00D82CF1 /* Social.framework */; };
 		731C9F821F975B7F0035394E /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 731C9F811F975B7F0035394E /* dog.jpeg */; };
 		7329088F1FA338EF008A2847 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329088E1FA338EF008A2847 /* cameraViewController.swift */; };
 		73D46D581F96106D00EC75FD /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D571F96106D00EC75FD /* plus.png */; };
@@ -28,6 +29,7 @@
 		7304C94E1F95BFDD00866FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7304C9511F95BFDD00866FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7304C9531F95BFDD00866FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7314C64F1FA8758C00D82CF1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		731C9F811F975B7F0035394E /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
 		7329088E1FA338EF008A2847 /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		73D46D571F96106D00EC75FD /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7314C6501FA875B600D82CF1 /* Social.framework in Frameworks */,
 				35DA912D4FF5E1CC178E51C2 /* Pods_dogInstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +54,7 @@
 		17C3018508B3D97B269A4B01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7314C64F1FA8758C00D82CF1 /* Social.framework */,
 				002B96B954C4322052DB2492 /* Pods_dogInstagram.framework */,
 			);
 			name = Frameworks;
