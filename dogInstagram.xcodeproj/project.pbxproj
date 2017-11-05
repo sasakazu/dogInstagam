@@ -16,6 +16,7 @@
 		7314C6501FA875B600D82CF1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7314C64F1FA8758C00D82CF1 /* Social.framework */; };
 		731C9F821F975B7F0035394E /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 731C9F811F975B7F0035394E /* dog.jpeg */; };
 		7329088F1FA338EF008A2847 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329088E1FA338EF008A2847 /* cameraViewController.swift */; };
+		734A8A0D1FAF1EBD0051CF55 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734A8A0C1FAF1EBD0051CF55 /* ViewController2.swift */; };
 		73D46D581F96106D00EC75FD /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D571F96106D00EC75FD /* plus.png */; };
 		73D46D5A1F9610DB00EC75FD /* plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D46D591F9610DB00EC75FD /* plus2.png */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		7314C64F1FA8758C00D82CF1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		731C9F811F975B7F0035394E /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
 		7329088E1FA338EF008A2847 /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
+		734A8A0C1FAF1EBD0051CF55 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = /Users/sasakurakazuya/Dropbox/ios/dogInstagram/dogInstagram/ViewController2.swift; sourceTree = "<absolute>"; };
 		73D46D571F96106D00EC75FD /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		73D46D591F9610DB00EC75FD /* plus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus2.png; sourceTree = "<group>"; };
 		96868E902F7A1572050A4F6E /* Pods-dogInstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dogInstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dogInstagram/Pods-dogInstagram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				7304C9471F95BFDD00866FEF /* AppDelegate.swift */,
 				7304C9491F95BFDD00866FEF /* ViewController.swift */,
 				7304C94B1F95BFDD00866FEF /* Main.storyboard */,
+				734A8A0C1FAF1EBD0051CF55 /* ViewController2.swift */,
 				7329088E1FA338EF008A2847 /* cameraViewController.swift */,
 				7304C94E1F95BFDD00866FEF /* Assets.xcassets */,
 				7304C9501F95BFDD00866FEF /* LaunchScreen.storyboard */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7304C94A1F95BFDD00866FEF /* ViewController.swift in Sources */,
+				734A8A0D1FAF1EBD0051CF55 /* ViewController2.swift in Sources */,
 				7329088F1FA338EF008A2847 /* cameraViewController.swift in Sources */,
 				7304C9481F95BFDD00866FEF /* AppDelegate.swift in Sources */,
 			);
