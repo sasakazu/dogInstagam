@@ -61,14 +61,14 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         //閉じる処理
         imagePicker.dismiss(animated: true, completion: nil)
-        label.text = "Tap the [Save] to save a picture"
+        label.text = "保存ボタンで保存する"
         
     }
     
     // 撮影がキャンセルされた時に呼ばれる
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
-        label.text = "Canceled"
+        label.text = "キャンセル"
     }
     
     
@@ -83,7 +83,7 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
                                            nil)
         }
         else{
-            label.text = "image Failed !"
+            label.text = "失敗しました !"
         }
     }
     
@@ -95,10 +95,10 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         if error != nil {
             print(error.code)
-            label.text = "Save Failed !"
+            label.text = "保存できませんでした !"
         }
         else{
-            label.text = "Save Succeeded"
+            label.text = "保存しました！"
         }
     }
     
@@ -115,10 +115,10 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
             cameraPicker.delegate = self
             self.present(cameraPicker, animated: true, completion: nil)
             
-            label.text = "Tap the [Start] to save a picture"
+            label.text = "カメラボタンをタップ！"
         }
         else{
-            label.text = "error"
+            label.text = "エラー"
             
         }
         
