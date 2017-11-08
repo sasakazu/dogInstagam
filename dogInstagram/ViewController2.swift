@@ -7,18 +7,67 @@
 
 import UIKit
 
-class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate,UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var namePickerview: UIPickerView!
+ 
+    var list = ["apple","banan","peach","Pino"]
+    
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return list.count
+    }
+    
+    //表示する文字列を指定する
+    //PickerViewに表示する配列の要素数を設定する
+    func pickerView(namePickerview: UIPickerView, titleForRow row: Int, forComponent component: Int)-> String! {
+        return list[row]
+    }
+    
+    //ラベル表示
+    func pickerView(namePickerview: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+        nameLabel.text = list[row]
+    }
+    
+    
+    
+    
+    
 
+    
+    
+    
+    
+
+
+    @IBAction func commentTextfield(_ sender: Any) {
+    }
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var cameraView: UIImageView!
-    
+
     var textVC2:String?
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        namePickerview.dataSource = self
+        namePickerview.delegate = self
+        
+    
          label.text = "カメラボタンを押すとカメラ起動！"
+    
+
     
     }
 
@@ -123,6 +172,14 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         }
         
     }
+    
+    //改行ボタンが押された際に呼ばれる.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
     
     
     override func didReceiveMemoryWarning() {
