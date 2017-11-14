@@ -7,13 +7,35 @@
 
 import UIKit
 
-class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+   
+    
+    var dog_list = [ "大型犬", "中型犬", "小型犬" ]
     
     
-
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return dog_list[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return dog_list.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        dogLabel.text = dog_list[row]
+    }
     
 
 
+    @IBOutlet weak var dogPickerView: UIPickerView!
+    
+    @IBOutlet weak var dogLabel: UILabel!
+    
     @IBAction func commentTextfield(_ sender: Any) {
     }
     
@@ -26,6 +48,9 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         dogPickerView.delegate = self
+         dogPickerView.dataSource = self
         
          label.text = "カメラボタンを押すとカメラ起動！"
     
@@ -53,6 +78,14 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

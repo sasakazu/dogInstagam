@@ -312,8 +312,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jzX-qW-NLD">
-                                <rect key="frame" x="0.0" y="375" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="399" width="375" height="138"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="423-QP-dSw" id="b4E-du-1k7"/>
+                                    <outlet property="delegate" destination="423-QP-dSw" id="NhS-aE-oAn"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c36-2m-qeq">
                                 <rect key="frame" x="16" y="545" width="343" height="48"/>
@@ -324,6 +328,13 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="犬の種類" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYY-qR-b3m">
+                                <rect key="frame" x="152" y="370" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -335,6 +346,8 @@
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="JiI-Gl-31q" id="oDI-yB-1N4"/>
+                        <outlet property="dogLabel" destination="IYY-qR-b3m" id="ygo-vV-5FC"/>
+                        <outlet property="dogPickerView" destination="jzX-qW-NLD" id="Qab-6m-mQQ"/>
                         <outlet property="label" destination="q4m-uD-vAC" id="62d-tg-Hjm"/>
                     </connections>
                 </viewController>
@@ -367,7 +380,6 @@
         <image name="dog.jpeg" width="230" height="219"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jBx-6j-lCC"/>
         <segue reference="wjQ-cA-hH0"/>
     </inferredMetricsTieBreakers>
 </document>
