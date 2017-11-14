@@ -79,14 +79,13 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         
     }
     
+//    // キーボードを閉じる
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        commentTextfield.resignFirstResponder()
+//        return true
+//    }
     
-    
-    
-    
-    
-    
-    
-    
+
     
     
     //　撮影が完了時した時に呼ばれる

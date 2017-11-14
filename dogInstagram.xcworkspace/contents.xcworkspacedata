@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/sasakurakazuya/Dropbox/ios/dogInstagram/dogInstagram/ViewController2.swift">
-   </FileRef>
-   <FileRef
       location = "group:dogInstagram.xcodeproj">
    </FileRef>
    <FileRef
